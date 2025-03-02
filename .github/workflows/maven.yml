@@ -30,23 +30,11 @@ jobs:
         distribution: 'temurin'
         cache: maven
 
-    - name: Debug File Structure
-      run: find ${{ github.workspace }} -name "HeadlessTestng.xml"
-
-    - name: Verify HeadlessTestng.xml Exists
-      run: |
-        if [ -f "${{ github.workspace }}/pom.xml" ]; then
-          echo "HeadlessTestng.xml exists!"
-        else
-          echo "HeadlessTestng.xml is missing!"
-          exit 1
-        fi
-
     - name: Run Tests with Maven
-      run: mvn clean test -DsuiteXmlFile=pom.xml
+      run: mvn clean test
 
     - name: Archive Test Reports
       uses: actions/upload-artifact@v4
       with:
-        name: sparkHtml
-        path: reports/*.html
+        name: TestReports
+        path: target/surefire-reports/*.xml
