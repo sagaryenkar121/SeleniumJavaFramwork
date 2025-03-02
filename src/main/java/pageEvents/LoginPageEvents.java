@@ -46,15 +46,15 @@ public class LoginPageEvents {
 	}
 
 	public void verifyNavigationBar() {
-		
+
 // Verify Search Bar
-		
+
 		WebElement searchBar = ele.getWebElement("XPATH", LoginPageElements.searchBar);
 		Assert.assertTrue(searchBar.isDisplayed(), "Search bar is missing after login!");
 		System.out.println("Search bar is displayed correctly after login.");
 
 // Verify Cart Icon
-		
+
 		WebElement cartIcon = ele.getWebElement("XPATH", LoginPageElements.cartIcon);
 		Assert.assertTrue(cartIcon.isDisplayed(), "Cart icon is missing after login!");
 		System.out.println("Cart icon is displayed correctly after login.");
