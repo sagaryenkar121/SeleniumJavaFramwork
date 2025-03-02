@@ -14,8 +14,8 @@ public interface SearchAndValidatesPageElements {
 	String subtotalPrice="(//span[contains(@class,'a-size-medium a-color-base')])[2]";
 	String product1Price="//span[text()='15,990']";
 	String product2Price="//span[text()='24,990']";
-	String deleteProduct1="(//input[@data-action='delete'])[1]";
-	String deleteProduct2="(//input[@data-action='delete'])[2]";
+	String deleteProduct1="(//input[@value='Delete'])[1]";
+	String deleteProduct2="//input[@data-action='delete']";
 	String GoTOCart2="//span[@class='nav-cart-icon nav-sprite']";
 			
 	
