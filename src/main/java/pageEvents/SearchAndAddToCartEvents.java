@@ -99,7 +99,7 @@ public class SearchAndAddToCartEvents {
 		        Assert.assertEquals(actualSubtotal, expectedSubtotal, "❌ Subtotal mismatch! The sum of product prices does not match.");
 		    }
 			
-			
+			// Empty cart
 			 public void removeItemsFromCart() throws InterruptedException {
 
 			        ele.getWebElement("XPATH", SearchAndValidatesPageElements.GoTOCart2).click();

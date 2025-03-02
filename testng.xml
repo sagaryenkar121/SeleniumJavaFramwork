@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Test Suite">
+<suite name="Headless Mobile Suite">
     <listeners>
         <listener class-name="utils.SuiteListener"/>
     </listeners>
 
-    <test thread-count="5" name="firefoxTest">
+    <test thread-count="5" name="firefoxMobileTest">
         <parameter name="browser" value="firefox"/>
-        <parameter name="headless" value="false"/>
-        <parameter name="mobileEmulation" value="false"/>
+        <parameter name="headless" value="true"/>
+        <parameter name="mobileEmulation" value="true"/>
+        
         <classes>
             <class name="qa.tests.TestCase1"/>
         </classes>
