@@ -34,17 +34,24 @@ jobs:
     - name: Debug File Structure
       run: ls -R ${{ github.workspace }}
 
-    - name: Verify headlesstestng.xml Exists
-      run: ls -l ${{ github.workspace }}/headlesstestng.xml || echo "File not found!"
+    - name: Verify TestNG XML File
+      run: |
+        if [ -f "${{ github.workspace }}/headlesstestng.xml" ]; then
+          echo "File exists!"
+        else
+          echo "File is missing!"
+          exit 1
+        fi
 
     - name: Run Tests with Maven
-      run: mvn clean test -DsuiteXmlFile=headlesstestng.xml
+      run: mvn clean test -DsuiteXmlFile=${{ github.workspace }}/headlesstestng.xml
 
     - name: Archive Test Reports
       uses: actions/upload-artifact@v4
       with:
         name: sparkHtml
         path: reports/*.html
+
 
 
 
