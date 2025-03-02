@@ -1,42 +1,51 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" 
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.test.automation</groupId>
     <artifactId>selenium-framework</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+     <!-- Properties Section -->
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <selenium.version>4.18.1</selenium.version>
+        <testng.version>7.8.0</testng.version>
+        <extentreports.version>5.0.9</extentreports.version>
+        <webdrivermanager.version>5.6.3</webdrivermanager.version>
+        <lombok.version>1.18.30</lombok.version>
+        <surefire.version>3.0.0-M7</surefire.version>
+        <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
+        <maven.resources.plugin.version>3.2.0</maven.resources.plugin.version>
+        <suiteXmlFile> headlesstestng.xml</suiteXmlFile>
+        
+    </properties>
 
     <dependencies>
-        <!-- Selenium Dependency -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.7.2</version>
+            <version>4.18.1</version>
         </dependency>
 
-        <!-- TestNG Dependency -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>7.8.0</version>
-            <scope>test</scope>
+            
         </dependency>
 
-        <!-- Extent Reports for Reporting -->
         <dependency>
             <groupId>com.aventstack</groupId>
             <artifactId>extentreports</artifactId>
             <version>5.0.9</version>
         </dependency>
 
-        <!-- WebDriver Manager (for browser drivers) -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
-            <version>5.9.2</version>
+            <version>5.6.3</version>
         </dependency>
 
-        <!-- Lombok Dependency (Fixes Compilation Error) -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -44,7 +53,6 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- Lombok Annotation Processor -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok-mapstruct-binding</artifactId>
@@ -54,7 +62,6 @@
 
     <build>
         <plugins>
-            <!-- Compiler Plugin: Setting Java Version and Enabling Annotation Processing -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -62,6 +69,7 @@
                 <configuration>
                     <source>11</source>
                     <target>11</target>
+                    <encoding>UTF-8</encoding>
                     <annotationProcessorPaths>
                         <path>
                             <groupId>org.projectlombok</groupId>
@@ -72,15 +80,22 @@
                 </configuration>
             </plugin>
 
-            <!-- Surefire Plugin: Running TestNG with XML Configuration -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M7</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>Headless.xml</suiteXmlFile>
+                        <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
                     </suiteXmlFiles>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
         </plugins>
