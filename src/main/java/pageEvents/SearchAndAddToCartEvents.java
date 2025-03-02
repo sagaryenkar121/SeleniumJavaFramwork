@@ -29,7 +29,8 @@ public class SearchAndAddToCartEvents {
 	
 
 	public void searchAndValidateProduct() throws InterruptedException {
-
+		
+         Thread.sleep(5000);
 		ele.getWebElement("XPATH", SearchAndValidatesPageElements.searchBox).sendKeys("insta360 link 2");
 		ele.getWebElement("XPATH", SearchAndValidatesPageElements.SearchButton).click();
 		ele.getWebElement("XPATH", SearchAndValidatesPageElements.BrandName).click();

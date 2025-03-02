@@ -45,10 +45,10 @@ public class LoginPageEvents {
 
 	}
 
-	public void verifyNavigationBar() {
+	public void verifyNavigationBar() throws InterruptedException {
 
 // Verify Search Bar
-
+        Thread.sleep(3000);
 		WebElement searchBar = ele.getWebElement("XPATH", LoginPageElements.searchBar);
 		Assert.assertTrue(searchBar.isDisplayed(), "Search bar is missing after login!");
 		System.out.println("Search bar is displayed correctly after login.");
@@ -66,7 +66,7 @@ public class LoginPageEvents {
 		System.out.println("Return And Order  icon is displayed correctly after login.");
 
 // Verify Navigation Bar
-
+        Thread.sleep(3000);
 		WebElement NavBar = ele.getWebElement("XPATH", LoginPageElements.NavBar);
 		Assert.assertTrue(NavBar.isDisplayed(), "Navigation Bar is missing after login!");
 		System.out.println("Navigation is displayed correctly after login.");
