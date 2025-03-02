@@ -28,13 +28,13 @@ public class TestCase1 extends baseTest {
 	}
 
 	@Test(priority = 2, description = "Verify that the top navigation bar appears correctly without any rendering issue or missing elements ")
-	public void validateNavigationBar() {
+	public void validateNavigationBar() throws InterruptedException {
 		logger.info("Verify the navigation bar, including the username, search bar, and cart icon. ");
 		loginPage.verifyNavigationBar();
 
 	}
 
-	@Test(priority = 1, description = "Search the Search for product insta360 link 2 And Add to Cart Also Verify Price of both product and subtotal.")
+	@Test(priority = 1, description = "Search  for product insta360 link 2 And Add to Cart Also Verify Price of both product and subtotal.")
 	public void searchProductAndAdd() throws InterruptedException {
 		logger.info(
 				"Verify the searched product, validate the product, add it to the cart, and also verify the subtotal.");
@@ -46,9 +46,9 @@ public class TestCase1 extends baseTest {
 		searchProductPage.verifyCartSubtotal();
 	}
 
-	@Test(priority = 4, description = "Verify the Cart is empaty after Verification")
+	@Test(priority = 4, description = "Verify the Cart is empaty after Verification ")
 	public void EmptyCart() throws InterruptedException {
-		logger.info("Remove all added Product from cart name sure cart is empty ");
+		logger.info("Remove all added Product from cart make sure cart is empty ");
 		homePage.signInButton();
 		loginPage.enterCredentials();
 		searchProductPage.removeItemsFromCart();
