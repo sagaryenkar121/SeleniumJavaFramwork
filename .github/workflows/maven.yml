@@ -21,20 +21,28 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
     - name: Set up JDK 17
       uses: actions/setup-java@v4
       with:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-    - name: Build with Maven
-      run: mvn clean test -DsuiteXmlFile=src/test/resources/headlesstestng.xml
-    - name: archive artifact
+
+    - name: Verify headlesstestng.xml Exists
+      run: ls -l ${{ github.workspace }}/headlesstestng.xml
+
+    - name: Run Tests with Maven
+      run: mvn clean test -DsuiteXmlFile=headlesstestng.xml
+
+    - name: Archive Test Reports
       uses: actions/upload-artifact@v4
       with:
         name: sparkHtml
-        path: .\reports\*.html
+        path: reports/*.html
+
         
         
 
