@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-02T19:07:41 IST" name="Headless Mobile Suite" finished-at="2025-03-02T19:10:05 IST" duration-ms="144232">
+    <groups>
+    </groups>
+    <test started-at="2025-03-02T19:07:41 IST" name="firefoxMobileTest" finished-at="2025-03-02T19:10:05 IST" duration-ms="144232">
+      <class name="qa.tests.TestCase1">
+        <test-method is-config="true" signature="beforeTestMethod()[pri:0, instance:qa.tests.TestCase1@7188af83]" started-at="2025-03-02T19:07:41 IST" name="beforeTestMethod" finished-at="2025-03-02T19:07:41 IST" duration-ms="327" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestMethod -->
+        <test-method is-config="true" signature="BeforeMethodMethod(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:qa.tests.TestCase1@7188af83]" started-at="2025-03-02T19:07:41 IST" name="BeforeMethodMethod" finished-at="2025-03-02T19:07:56 IST" duration-ms="14567" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void qa.tests.TestCase1.searchProductAndAdd() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethodMethod -->
+        <test-method signature="searchProductAndAdd()[pri:1, instance:qa.tests.TestCase1@7188af83]" started-at="2025-03-02T19:07:56 IST" name="searchProductAndAdd" description="Search the Search for product insta360 link 2 And Add to Cart Also Verify Price of both product and subtotal." finished-at="2025-03-02T19:08:33 IST" duration-ms="36978" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProductAndAdd -->
+        <test-method is-config="true" signature="afterTestMethod(org.testng.ITestResult)[pri:0, instance:qa.tests.TestCase1@7188af83]" started-at="2025-03-02T19:08:33 IST" name="afterTestMethod" finished-at="2025-03-02T19:08:34 IST" duration-ms="1336" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchProductAndAdd status=SUCCESS method=TestCase1.searchProductAndAdd()[pri:1, instance:qa.tests.TestCase1@7188af83] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestMethod -->
+        <test-method is-config="true" signature="BeforeMethodMethod(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:qa.tests.TestCase1@7188af83]" started-at="2025-03-02T19:08:34 IST" name="BeforeMethodMethod" finished-at="2025-03-02T19:08:49 IST" duration-ms="15298" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void qa.tests.TestCase1.validateNavigationBar()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethodMethod -->
+        <test-method signature="validateNavigationBar()[pri:2, instance:qa.tests.TestCase1@7188af83]" started-at="2025-03-02T19:08:49 IST" name="validateNavigationBar" description="Verify that the top navigation bar appears correctly without any rendering issue or missing elements " finished-at="2025-03-02T19:08:49 IST" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateNavigationBar -->
+        <test-method is-config="true" signature="afterTestMethod(org.testng.ITestResult)[pri:0, instance:qa.tests.TestCase1@7188af83]" started-at="2025-03-02T19:08:49 IST" name="afterTestMethod" finished-at="2025-03-02T19:08:50 IST" duration-ms="1052" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateNavigationBar status=SUCCESS method=TestCase1.validateNavigationBar()[pri:2, instance:qa.tests.TestCase1@7188af83] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestMethod -->
+        <test-method is-config="true" signature="BeforeMethodMethod(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:qa.tests.TestCase1@7188af83]" started-at="2025-03-02T19:08:50 IST" name="BeforeMethodMethod" finished-at="2025-03-02T19:09:10 IST" duration-ms="19845" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void qa.tests.TestCase1.verfyEnteringCredential() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethodMethod -->
+        <test-method signature="verfyEnteringCredential()[pri:3, instance:qa.tests.TestCase1@7188af83]" started-at="2025-03-02T19:09:10 IST" name="verfyEnteringCredential" description="Verify that the login page is loaded successfully And Login into Application." finished-at="2025-03-02T19:09:23 IST" duration-ms="12510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verfyEnteringCredential -->
+        <test-method is-config="true" signature="afterTestMethod(org.testng.ITestResult)[pri:0, instance:qa.tests.TestCase1@7188af83]" started-at="2025-03-02T19:09:23 IST" name="afterTestMethod" finished-at="2025-03-02T19:09:24 IST" duration-ms="1105" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verfyEnteringCredential status=SUCCESS method=TestCase1.verfyEnteringCredential()[pri:3, instance:qa.tests.TestCase1@7188af83] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestMethod -->
+        <test-method is-config="true" signature="BeforeMethodMethod(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:qa.tests.TestCase1@7188af83]" started-at="2025-03-02T19:09:24 IST" name="BeforeMethodMethod" finished-at="2025-03-02T19:09:35 IST" duration-ms="11414" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void qa.tests.TestCase1.EmptyCart() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethodMethod -->
+        <test-method signature="EmptyCart()[pri:4, instance:qa.tests.TestCase1@7188af83]" started-at="2025-03-02T19:09:35 IST" name="EmptyCart" description="Verify the Cart is empaty after Verification" finished-at="2025-03-02T19:10:03 IST" duration-ms="27941" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EmptyCart -->
+        <test-method is-config="true" signature="afterTestMethod(org.testng.ITestResult)[pri:0, instance:qa.tests.TestCase1@7188af83]" started-at="2025-03-02T19:10:03 IST" name="afterTestMethod" finished-at="2025-03-02T19:10:05 IST" duration-ms="1376" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=EmptyCart status=SUCCESS method=TestCase1.EmptyCart()[pri:4, instance:qa.tests.TestCase1@7188af83] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestMethod -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:qa.tests.TestCase1@7188af83]" started-at="2025-03-02T19:10:05 IST" name="afterTest" finished-at="2025-03-02T19:10:05 IST" duration-ms="304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- qa.tests.TestCase1 -->
+    </test> <!-- firefoxMobileTest -->
+  </suite> <!-- Headless Mobile Suite -->
+</testng-results>
