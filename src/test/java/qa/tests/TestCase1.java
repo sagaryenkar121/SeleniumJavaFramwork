@@ -48,7 +48,7 @@ public class TestCase1 extends baseTest {
 
 	@Test(priority = 4, description = "Verify the Cart is empaty after Verification")
 	public void EmptyCart() throws InterruptedException {
-		logger.info("Remove all added Product from cart");
+		logger.info("Remove all added Product from cart name sure cart is empty ");
 		homePage.signInButton();
 		loginPage.enterCredentials();
 		searchProductPage.removeItemsFromCart();
