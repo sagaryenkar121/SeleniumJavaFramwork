@@ -26,7 +26,7 @@ jobs:
     - name: Verify TestNG XML File Exists
       run: |
         ls -l $GITHUB_WORKSPACE
-        if [ -f "$GITHUB_WORKSPACE/HeadlessTestng.xml" ]; then
+        if [ -f "$GITHUB_WORKSPACE/headlesstestng.xml" ]; then
           echo "TestNG XML file found!"
         else
           echo "TestNG XML file is missing!"
@@ -41,7 +41,7 @@ jobs:
         cache: maven
 
     - name: Run Tests with TestNG Suite
-      run: mvn clean test -DsuiteXmlFile=HeadlessTestng.xml
+      run: mvn clean test -DsuiteXmlFile=headlesstestng.xml
 
     - name: Archive Test Reports
       uses: actions/upload-artifact@v4
