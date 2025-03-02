@@ -31,8 +31,11 @@ jobs:
         distribution: 'temurin'
         cache: maven
 
+    - name: Debug File Structure
+      run: ls -R ${{ github.workspace }}
+
     - name: Verify headlesstestng.xml Exists
-      run: ls -l ${{ github.workspace }}/headlesstestng.xml
+      run: ls -l ${{ github.workspace }}/headlesstestng.xml || echo "File not found!"
 
     - name: Run Tests with Maven
       run: mvn clean test -DsuiteXmlFile=headlesstestng.xml
@@ -42,6 +45,7 @@ jobs:
       with:
         name: sparkHtml
         path: reports/*.html
+
 
         
         
