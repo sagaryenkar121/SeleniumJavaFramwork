@@ -29,7 +29,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn clean test -DXmlFile=headlesstestng.xml
+      run: mvn clean test -DXmlFile=${GITHUB_WORKSPACE}/headlesstestng.xml
     - name: archive artifact
       uses: actions/upload-artifact@v4
       with:
