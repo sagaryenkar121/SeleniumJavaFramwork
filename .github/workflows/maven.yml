@@ -35,7 +35,7 @@ jobs:
 
     - name: Verify HeadlessTestng.xml Exists
       run: |
-        if [ -f "${{ github.workspace }}/HeadlessTestng.xml" ]; then
+        if [ -f "${{ github.workspace }}/pom.xml" ]; then
           echo "HeadlessTestng.xml exists!"
         else
           echo "HeadlessTestng.xml is missing!"
@@ -43,7 +43,7 @@ jobs:
         fi
 
     - name: Run Tests with Maven
-      run: mvn clean test -DsuiteXmlFile=HeadlessTestng.xml
+      run: mvn clean test -DsuiteXmlFile=pom.xml
 
     - name: Archive Test Reports
       uses: actions/upload-artifact@v4
