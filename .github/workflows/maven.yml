@@ -30,8 +30,10 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
-      - name: Install Firefox
-        run: sudo apt-get update && sudo apt-get install -y firefox
+      - name: Install Required Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y firefox jq xvfb
 
       - name: Install Geckodriver (Firefox WebDriver)
         run: |
@@ -41,8 +43,16 @@ jobs:
           chmod +x geckodriver
           sudo mv geckodriver /usr/local/bin/
 
+      - name: Verify Installations
+        run: |
+          firefox --version
+          geckodriver --version
+
       - name: Run Tests with Maven
-        run: mvn clean test -DsuiteXmlFile=headlesstestng.xml
+        run: |
+          Xvfb :99 &  # Start virtual display
+          export DISPLAY=:99
+          mvn clean test -DsuiteXmlFile=headlesstestng.xml
 
       - name: Archive Test Reports
         uses: actions/upload-artifact@v4
