@@ -13,8 +13,8 @@
         <methods>
           <include name="afterTest"/>
           <include name="beforeTestMethod"/>
-          <include name="searchProductAndAdd"/>
           <include name="BeforeMethodMethod"/>
+          <include name="validateNavigationBar"/>
           <include name="afterTestMethod"/>
         </methods>
       </class> <!-- qa.tests.TestCase1 -->

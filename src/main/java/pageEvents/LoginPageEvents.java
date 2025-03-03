@@ -1,7 +1,14 @@
 package pageEvents;
 
 import java.time.Duration;
-
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import utils.ElementFetch;
+import pageObject.LoginPageElements;
+import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -60,10 +67,21 @@ public class LoginPageEvents {
 	public void verifyNavigationBar() throws InterruptedException {
 
 // Verify Search Bar
-        Thread.sleep(3000);
-		WebElement searchBar = ele.getWebElement("XPATH", LoginPageElements.searchBar);
-		Assert.assertTrue(searchBar.isDisplayed(), "Search bar is missing after login!");
-		System.out.println("Search bar is displayed correctly after login.");
+		
+		
+
+        // Verify Search Bar
+		WebElement searchBar = new WebDriverWait(driver, Duration.ofSeconds(30))
+		        .until(ExpectedConditions.visibilityOf(ele.getWebElement("XPATH", LoginPageElements.searchBar)));
+
+		Assert.assertTrue(searchBar.isDisplayed(), "❌ Search bar is missing after login!");
+		System.out.println("✅ Search bar is displayed correctly after login.");
+		/*
+		 * Thread.sleep(3000); WebElement searchBar = ele.getWebElement("XPATH",
+		 * LoginPageElements.searchBar); Assert.assertTrue(searchBar.isDisplayed(),
+		 * "Search bar is missing after login!");
+		 * System.out.println("Search bar is displayed correctly after login.");
+		 */
 
 // Verify Cart Icon
 
