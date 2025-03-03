@@ -35,8 +35,9 @@ jobs:
 
       - name: Install Geckodriver (Firefox WebDriver)
         run: |
-          wget https://github.com/mozilla/geckodriver/releases/latest/download/geckodriver-linux64.tar.gz
-          tar -xvzf geckodriver-linux64.tar.gz
+          GECKO_VERSION=$(curl -s https://api.github.com/repos/mozilla/geckodriver/releases/latest | jq -r .tag_name)
+          wget "https://github.com/mozilla/geckodriver/releases/download/${GECKO_VERSION}/geckodriver-${GECKO_VERSION}-linux64.tar.gz"
+          tar -xvzf "geckodriver-${GECKO_VERSION}-linux64.tar.gz"
           chmod +x geckodriver
           sudo mv geckodriver /usr/local/bin/
 
