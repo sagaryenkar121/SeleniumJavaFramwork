@@ -74,7 +74,8 @@ public class SearchAndAddToCartEvents {
 			}
 			
 			
-			public void verifyCartSubtotal() {
+			public void verifyCartSubtotal() throws InterruptedException {
+				Thread.sleep(5000);
 		        // Get Product 1 Price
 		        WebElement product1Element = ele.getWebElement("XPATH", SearchAndValidatesPageElements.product1Price);
 		        double product1Price = extractPrice(product1Element.getText());
