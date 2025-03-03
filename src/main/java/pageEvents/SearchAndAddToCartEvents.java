@@ -104,6 +104,7 @@ public class SearchAndAddToCartEvents {
 			 public void removeItemsFromCart() throws InterruptedException {
 				 Thread.sleep(5000); 
 			        ele.getWebElement("XPATH", SearchAndValidatesPageElements.GoTOCart2).click();
+			        Thread.sleep(3000); 
 			        ele.getWebElement("XPATH", SearchAndValidatesPageElements.deleteProduct1).click();
 			        Thread.sleep(5000);
 			        ele.getWebElement("XPATH", SearchAndValidatesPageElements.deleteProduct2).click();

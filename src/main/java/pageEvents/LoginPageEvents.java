@@ -29,14 +29,14 @@ public class LoginPageEvents {
 		ele.getWebElement("XPATH", LoginPageElements.continueBtn).click();
 		ele.getWebElement("XPATH", LoginPageElements.passwordField).sendKeys("Sagar@123");
 		ele.getWebElement("XPATH", LoginPageElements.submitPassword).click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		if (ele.getWebElement("XPATH", HomePageElements.amzonLogo).isDisplayed()) {
 			System.out.println("Amazon.sg logo is displayed correctly After Login.");
 		} else {
 			System.out.println("Amazon.sg logo is NOT displayed! After Login");
 			
 		}
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		Assert.assertTrue(ele.getWebElement("XPATH", HomePageElements.amzonLogo).isDisplayed(),
 				"Amazon logo is NOT displayed! Before Login");
 
