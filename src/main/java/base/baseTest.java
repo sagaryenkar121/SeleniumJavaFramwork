@@ -6,6 +6,7 @@ import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -55,9 +56,11 @@ public class baseTest {
 	    boolean isMobile = Boolean.parseBoolean(mobileEmulation);
 
 	    setupDriver(browser, isHeadless, isMobile);
-	    driver.manage().window().maximize();
+	    //driver.manage().window().maximize();
+	    driver.manage().window().setSize(new Dimension(1920, 1080));
+
 	    driver.get(Constants.url);
-	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 	}
 
 	@AfterMethod
