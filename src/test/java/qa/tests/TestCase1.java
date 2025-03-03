@@ -39,6 +39,7 @@ public class TestCase1 extends baseTest {
 		logger.info(
 				"Verify the searched product, validate the product, add it to the cart, and also verify the subtotal.");
 		homePage.signInButton();
+		Thread.sleep(2000);
 		loginPage.enterCredentials();
 		searchProductPage.searchAndValidateProduct();
 		searchProductPage.verifySearchResult("insta360 link 2");
@@ -49,6 +50,7 @@ public class TestCase1 extends baseTest {
 	@Test(priority = 4, description = "Verify the Cart is empaty after Verification ")
 	public void EmptyCart() throws InterruptedException {
 		logger.info("Remove all added Product from cart make sure cart is empty ");
+		Thread.sleep(2000);
 		homePage.signInButton();
 		loginPage.enterCredentials();
 		searchProductPage.removeItemsFromCart();
