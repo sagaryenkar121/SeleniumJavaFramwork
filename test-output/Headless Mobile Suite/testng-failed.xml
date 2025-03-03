@@ -14,6 +14,7 @@
           <include name="afterTest"/>
           <include name="beforeTestMethod"/>
           <include name="searchProductAndAdd"/>
+          <include name="EmptyCart"/>
           <include name="BeforeMethodMethod"/>
           <include name="afterTestMethod"/>
         </methods>
