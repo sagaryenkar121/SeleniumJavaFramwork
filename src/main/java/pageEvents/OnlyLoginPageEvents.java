@@ -23,11 +23,12 @@ public class OnlyLoginPageEvents {
 	WebDriver driver;
 
 	public void OnlyLogin() throws InterruptedException {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
 
         // Wait for Sign In button to be clickable and click it
         WebElement signInButton = wait.until(ExpectedConditions.elementToBeClickable(
                 ele.getWebElement("XPATH", OnlyLoginPageElements.SignInButton1)));
+        
         signInButton.click();
         //ele.getWebElement("XPATH", OnlyLoginPageElements.SignInButton1).click();
 		ele.getWebElement("XPATH", OnlyLoginPageElements.mobileNumber1).sendKeys("6352901777");

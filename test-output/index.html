@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Headless_Mobile_Suite" class="navigator-link">
-              <span class="suite-name border-passed">Headless Mobile Suite</span>
+              <span class="suite-name border-failed">Headless Mobile Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Headless_Mobile_Suite" class="hide-methods failed suite-Headless_Mobile_Suite"> (hide)</a> <!-- hide-methods failed suite-Headless_Mobile_Suite -->
+                      <a href="#" panel-name="suite-Headless_Mobile_Suite" class="show-methods failed suite-Headless_Mobile_Suite"> (show)</a> <!-- show-methods failed suite-Headless_Mobile_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Headless_Mobile_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Headless_Mobile_Suite" title="qa.tests.TestCase1" class="method navigator-link" hash-for-method="searchProductAndAdd">searchProductAndAdd</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Headless_Mobile_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,11 +118,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Headless_Mobile_Suite" title="qa.tests.TestCase1" class="method navigator-link" hash-for-method="EmptyCart">EmptyCart</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Headless_Mobile_Suite" title="qa.tests.TestCase1" class="method navigator-link" hash-for-method="searchProductAndAdd">searchProductAndAdd</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -133,6 +142,29 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Headless_Mobile_Suite" class="panel Headless_Mobile_Suite">
+          <div class="suite-Headless_Mobile_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">qa.tests.TestCase1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchProductAndAdd">
+                  </a> <!-- searchProductAndAdd -->
+                  <span class="method-name">searchProductAndAdd</span>
+                  <div class="stack-trace">java.lang.AssertionError: ❌ Subtotal mismatch! The sum of product prices does not match. expected [40980.0] but found [81960.0]
+	at pageEvents.SearchAndAddToCartEvents.verifyCartSubtotal(SearchAndAddToCartEvents.java:101)
+	at qa.tests.TestCase1.searchProductAndAdd(TestCase1.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Search  for product insta360 link 2 And Add to Cart Also Verify Price of both product and subtotal.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Headless_Mobile_Suite-class-failed -->
           <div class="suite-Headless_Mobile_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -146,15 +178,6 @@
                   <span class="method-name">EmptyCart</span>
                   <em>
 (Verify the Cart is empaty after Verification )                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="searchProductAndAdd">
-                  </a> <!-- searchProductAndAdd -->
-                  <span class="method-name">searchProductAndAdd</span>
-                  <em>
-(Search  for product insta360 link 2 And Add to Cart Also Verify Price of both product and subtotal.)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -239,19 +262,19 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'searchProductAndAdd')
 data.setCell(0, 2, 'qa.tests.TestCase1')
-data.setCell(0, 3, 30396);
+data.setCell(0, 3, 31662);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'EmptyCart')
 data.setCell(1, 2, 'qa.tests.TestCase1')
-data.setCell(1, 3, 24637);
+data.setCell(1, 3, 24334);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verfyEnteringCredential')
 data.setCell(2, 2, 'qa.tests.TestCase1')
-data.setCell(2, 3, 16971);
+data.setCell(2, 3, 16325);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'validateNavigationBar')
 data.setCell(3, 2, 'qa.tests.TestCase1')
-data.setCell(3, 3, 4430);
+data.setCell(3, 3, 4311);
 window.suiteTableData['Headless_Mobile_Suite']= { tableData: data, tableDiv: 'times-div-Headless_Mobile_Suite'}
 return data;
 }
@@ -289,55 +312,57 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">BeforeMethodMethod(firefox, true, true, public void qa.tests.TestCase1.searchProductAndAdd() throws java.lang.Interrupt...)</span>
-                <span class="method-start">370 ms</span>
+                <span class="method-start">374 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">searchProductAndAdd</span>
-                <span class="method-start">7797 ms</span>
+                <span class="method-start">7354 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterTestMethod([TestResult name=searchProductAndAdd status=SUCCESS method=TestCase1.searchProductAndAdd()[pri:1, in...)</span>
-                <span class="method-start">38197 ms</span>
+                <span class="method-name">afterTestMethod([TestResult name=searchProductAndAdd status=FAILURE method=TestCase1.searchProductAndAdd()[pri:1, in...)</span>
+                <span class="method-start">39133 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">BeforeMethodMethod(firefox, true, true, public void qa.tests.TestCase1.validateNavigationBar() throws java.lang.Interru...)</span>
-                <span class="method-start">39341 ms</span>
+                <span class="method-start">40299 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateNavigationBar</span>
-                <span class="method-start">43698 ms</span>
+                <span class="method-start">44754 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterTestMethod([TestResult name=validateNavigationBar status=SUCCESS method=TestCase1.validateNavigationBar()[pri:2...)</span>
-                <span class="method-start">48130 ms</span>
+                <span class="method-start">49068 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">BeforeMethodMethod(firefox, true, true, public void qa.tests.TestCase1.verfyEnteringCredential() throws java.lang.Inter...)</span>
-                <span class="method-start">51293 ms</span>
+                <span class="method-start">50428 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verfyEnteringCredential</span>
-                <span class="method-start">55414 ms</span>
+                <span class="method-start">56829 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterTestMethod([TestResult name=verfyEnteringCredential status=SUCCESS method=TestCase1.verfyEnteringCredential()[p...)</span>
-                <span class="method-start">72386 ms</span>
+                <span class="method-start">73156 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">BeforeMethodMethod(firefox, true, true, public void qa.tests.TestCase1.EmptyCart() throws java.lang.InterruptedExceptio...)</span>
-                <span class="method-start">73750 ms</span>
+                <span class="method-start">74172 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">EmptyCart</span>
-                <span class="method-start">78869 ms</span>
+                <span class="method-start">78088 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterTestMethod([TestResult name=EmptyCart status=SUCCESS method=TestCase1.EmptyCart()[pri:4, instance:qa.tests.Test...)</span>
-                <span class="method-start">103507 ms</span>
+                <span class="method-start">102423 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">104589 ms</span>
+                <span class="method-start">103519 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -77,7 +77,7 @@ public class LoginPageEvents {
 		
 
         // Verify Search Bar
-		WebElement searchBar = new WebDriverWait(driver, Duration.ofSeconds(30))
+		WebElement searchBar = new WebDriverWait(driver, Duration.ofSeconds(50))
 		        .until(ExpectedConditions.visibilityOf(ele.getWebElement("XPATH", LoginPageElements.searchBar)));
 
 		Assert.assertTrue(searchBar.isDisplayed(), "❌ Search bar is missing after login!");
