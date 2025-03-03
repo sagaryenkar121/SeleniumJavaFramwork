@@ -28,8 +28,11 @@ public class OnlyLoginPageEvents {
         // Wait for Sign In button to be clickable and click it
         WebElement signInButton = wait.until(ExpectedConditions.elementToBeClickable(
                 ele.getWebElement("XPATH", OnlyLoginPageElements.SignInButton1)));
-        
-        signInButton.click();
+        wait.until(ExpectedConditions.visibilityOf(signInButton));
+
+     // Ensure it is clickable
+     wait.until(ExpectedConditions.elementToBeClickable(signInButton)).click();
+        //signInButton.click();
         //ele.getWebElement("XPATH", OnlyLoginPageElements.SignInButton1).click();
 		ele.getWebElement("XPATH", OnlyLoginPageElements.mobileNumber1).sendKeys("6352901777");
 		Thread.sleep(3000);

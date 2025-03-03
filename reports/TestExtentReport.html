@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Automation Test Result By Sagar Yenkar</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Mar 4, 2025 01:43:07 am</span></a>
+<a href="#"><span class="badge badge-primary">Mar 4, 2025 02:04:11 am</span></a>
 </li>
 </ul>
 </div>
@@ -67,6 +67,7 @@
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -74,25 +75,25 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">searchProductAndAdd</p>
             <p class="text-sm">
-              <span>1:43:07 am</span> / <span>00:00:39:484</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>2:04:11 am</span> / <span>00:00:38:881</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">searchProductAndAdd</h5>
-<span class='badge badge-success'>03.04.2025 1:43:07 am</span>
-<span class='badge badge-danger'>03.04.2025 1:43:47 am</span>
-<span class='badge badge-default'>00:00:39:484</span>
+<h5 class="test-status text-fail">searchProductAndAdd</h5>
+<span class='badge badge-success'>03.04.2025 2:04:11 am</span>
+<span class='badge badge-danger'>03.04.2025 2:04:50 am</span>
+<span class='badge badge-default'>00:00:38:881</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -104,23 +105,30 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>1:43:07 am</td>
+        <td>2:04:11 am</td>
         <td>
           **Test Description:** Search  for product insta360 link 2 And Add to Cart Also Verify Price of both product and subtotal.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>1:43:14 am</td>
+        <td>2:04:18 am</td>
         <td>
           Verify the searched product, validate the product, add it to the cart, and also verify the subtotal.
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>1:43:47 am</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:04:50 am</td>
         <td>
-          <span class='badge white-text green'>searchProductAndAdd- Test case PASS</span>
+          <span class='badge white-text red'>searchProductAndAdd- Test case Failed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:04:50 am</td>
+        <td>
+          <span class='badge white-text red'>java.lang.AssertionError: ❌ Subtotal mismatch! The sum of product prices does not match. expected [40980.0] but found [81960.0]- Test case Failed</span>
         </td>
       </tr>
   </tbody>
@@ -135,7 +143,7 @@
           <div class="test-detail">
             <p class="name">validateNavigationBar</p>
             <p class="text-sm">
-              <span>1:43:48 am</span> / <span>00:00:08:695</span>
+              <span>2:04:51 am</span> / <span>00:00:09:588</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -144,9 +152,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">validateNavigationBar</h5>
-<span class='badge badge-success'>03.04.2025 1:43:48 am</span>
-<span class='badge badge-danger'>03.04.2025 1:43:57 am</span>
-<span class='badge badge-default'>00:00:08:695</span>
+<span class='badge badge-success'>03.04.2025 2:04:51 am</span>
+<span class='badge badge-danger'>03.04.2025 2:05:01 am</span>
+<span class='badge badge-default'>00:00:09:588</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -158,21 +166,21 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>1:43:48 am</td>
+        <td>2:04:51 am</td>
         <td>
           **Test Description:** Verify that the top navigation bar appears correctly without any rendering issue or missing elements 
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>1:43:53 am</td>
+        <td>2:04:57 am</td>
         <td>
           Verify the navigation bar, including the username, search bar, and cart icon. 
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>1:43:57 am</td>
+        <td>2:05:01 am</td>
         <td>
           <span class='badge white-text green'>validateNavigationBar- Test case PASS</span>
         </td>
@@ -189,7 +197,7 @@
           <div class="test-detail">
             <p class="name">verfyEnteringCredential</p>
             <p class="text-sm">
-              <span>1:43:58 am</span> / <span>00:00:21:471</span>
+              <span>2:05:02 am</span> / <span>00:00:20:796</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -198,9 +206,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">verfyEnteringCredential</h5>
-<span class='badge badge-success'>03.04.2025 1:43:58 am</span>
-<span class='badge badge-danger'>03.04.2025 1:44:19 am</span>
-<span class='badge badge-default'>00:00:21:471</span>
+<span class='badge badge-success'>03.04.2025 2:05:02 am</span>
+<span class='badge badge-danger'>03.04.2025 2:05:23 am</span>
+<span class='badge badge-default'>00:00:20:796</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -212,21 +220,21 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>1:43:58 am</td>
+        <td>2:05:02 am</td>
         <td>
           **Test Description:** Verify that the login page is loaded successfully And Login into Application.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>1:44:03 am</td>
+        <td>2:05:06 am</td>
         <td>
           Verify the Sign In Button and login
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>1:44:19 am</td>
+        <td>2:05:23 am</td>
         <td>
           <span class='badge white-text green'>verfyEnteringCredential- Test case PASS</span>
         </td>
@@ -243,7 +251,7 @@
           <div class="test-detail">
             <p class="name">EmptyCart</p>
             <p class="text-sm">
-              <span>1:44:20 am</span> / <span>00:00:27:582</span>
+              <span>2:05:24 am</span> / <span>00:00:25:809</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -252,9 +260,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">EmptyCart</h5>
-<span class='badge badge-success'>03.04.2025 1:44:20 am</span>
-<span class='badge badge-danger'>03.04.2025 1:44:48 am</span>
-<span class='badge badge-default'>00:00:27:582</span>
+<span class='badge badge-success'>03.04.2025 2:05:24 am</span>
+<span class='badge badge-danger'>03.04.2025 2:05:50 am</span>
+<span class='badge badge-default'>00:00:25:809</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -266,21 +274,21 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>1:44:20 am</td>
+        <td>2:05:24 am</td>
         <td>
           **Test Description:** Verify the Cart is empaty after Verification 
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>1:44:25 am</td>
+        <td>2:05:29 am</td>
         <td>
           Remove all added Product from cart make sure cart is empty 
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>1:44:48 am</td>
+        <td>2:05:50 am</td>
         <td>
           <span class='badge white-text green'>EmptyCart- Test case PASS</span>
         </td>
@@ -304,25 +312,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Mar 4, 2025 01:43:07 am</h3>
+<h3>Mar 4, 2025 02:04:11 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Mar 4, 2025 01:44:49 am</h3>
+<h3>Mar 4, 2025 02:05:51 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>4</h3>
+<h3>3</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -338,12 +346,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>4</b> tests passed
+<div><small data-tooltip='75%'>
+<b>3</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> tests failed,
+<small data-tooltip='25%'><b>1</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -361,9 +369,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='33%'><b>4</b> events passed</small></div>
+<div><small data-tooltip='23%'><b>3</b> events passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> events failed,
+<small data-tooltip='15%'><b>2</b> events failed,
 <b data-tooltip='%'>8</b> others
 </small>
 </div>
@@ -380,7 +388,7 @@
 </div></div>
 <script>
 var timeline = {
-"searchProductAndAdd":39.484,"validateNavigationBar":8.695,"verfyEnteringCredential":21.471,"EmptyCart":27.582
+"searchProductAndAdd":38.881,"validateNavigationBar":9.588,"verfyEnteringCredential":20.796,"EmptyCart":25.809
 };
 </script>
 <div class="row">
@@ -389,8 +397,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 4,
-failParent: 0,
+passParent: 3,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -406,8 +414,8 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 4,
-failEvents: 0,
+passEvents: 3,
+failEvents: 2,
 warningEvents: 0,
 skipEvents: 0,
 infoEvents: 8
