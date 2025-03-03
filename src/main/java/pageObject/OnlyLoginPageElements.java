@@ -11,6 +11,6 @@ public interface OnlyLoginPageElements {
 	String returnOrder1="//a[@id='nav-orders']";
 	String cartIcon1="//a[@id='nav-cart']";
 	String NavBar1="//div[@id='navbar']";
-	String SignInButton1="//span[@id='nav-link-accountList-nav-line-1']";
+	String SignInButton1="//a[@id='nav-link-accountList']";
 
 }
