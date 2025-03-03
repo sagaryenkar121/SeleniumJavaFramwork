@@ -5,6 +5,9 @@ import org.openqa.selenium.WebDriver;
 import pageObject.LoginPageElements;
 import pageObject.OnlyLoginPageElements;
 import utils.ElementFetch;
+
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -20,8 +23,13 @@ public class OnlyLoginPageEvents {
 	WebDriver driver;
 
 	public void OnlyLogin() throws InterruptedException {
-		Thread.sleep(3000);
-		ele.getWebElement("XPATH", OnlyLoginPageElements.SignInButton1).click();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+
+        // Wait for Sign In button to be clickable and click it
+        WebElement signInButton = wait.until(ExpectedConditions.elementToBeClickable(
+                ele.getWebElement("XPATH", OnlyLoginPageElements.SignInButton1)));
+        signInButton.click();
+        //ele.getWebElement("XPATH", OnlyLoginPageElements.SignInButton1).click();
 		ele.getWebElement("XPATH", OnlyLoginPageElements.mobileNumber1).sendKeys("6352901777");
 		Thread.sleep(3000);
 		ele.getWebElement("XPATH", OnlyLoginPageElements.continueBtn1).click();

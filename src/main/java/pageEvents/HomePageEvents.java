@@ -6,6 +6,7 @@ import utils.ElementFetch;
 public class HomePageEvents {
 	ElementFetch ele= new ElementFetch();
 	public void signInButton() throws InterruptedException {
+		
 		//Thread.sleep(5000);
 		if(ele.getWebElement("XPATH", HomePageElements.amzonLogo).isDisplayed()) {
 			System.out.println("Amazon.sg logo is displayed correctly Before Login.");
