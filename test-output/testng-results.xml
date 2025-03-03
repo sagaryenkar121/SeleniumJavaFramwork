@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-03T03:09:47 IST" name="Headless Mobile Suite" finished-at="2025-03-03T03:11:16 IST" duration-ms="88737">
+  <suite started-at="2025-03-03T15:50:48 IST" name="Headless Mobile Suite" finished-at="2025-03-03T15:52:37 IST" duration-ms="109351">
     <groups>
     </groups>
-    <test started-at="2025-03-03T03:09:47 IST" name="firefoxMobileTest" finished-at="2025-03-03T03:11:16 IST" duration-ms="88737">
+    <test started-at="2025-03-03T15:50:48 IST" name="firefoxMobileTest" finished-at="2025-03-03T15:52:37 IST" duration-ms="109351">
       <class name="qa.tests.TestCase1">
-        <test-method is-config="true" signature="beforeTestMethod()[pri:0, instance:qa.tests.TestCase1@7f485fda]" started-at="2025-03-03T03:09:47 IST" name="beforeTestMethod" finished-at="2025-03-03T03:09:47 IST" duration-ms="405" status="PASS">
+        <test-method is-config="true" signature="beforeTestMethod()[pri:0, instance:qa.tests.TestCase1@7f485fda]" started-at="2025-03-03T15:50:48 IST" name="beforeTestMethod" finished-at="2025-03-03T15:50:48 IST" duration-ms="313" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTestMethod -->
-        <test-method is-config="true" signature="BeforeMethodMethod(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:qa.tests.TestCase1@7f485fda]" started-at="2025-03-03T03:09:47 IST" name="BeforeMethodMethod" finished-at="2025-03-03T03:09:54 IST" duration-ms="6926" status="PASS">
+        <test-method is-config="true" signature="BeforeMethodMethod(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:qa.tests.TestCase1@7f485fda]" started-at="2025-03-03T15:50:48 IST" name="BeforeMethodMethod" finished-at="2025-03-03T15:50:55 IST" duration-ms="7164" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,11 +37,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethodMethod -->
-        <test-method signature="searchProductAndAdd()[pri:1, instance:qa.tests.TestCase1@7f485fda]" started-at="2025-03-03T03:09:54 IST" name="searchProductAndAdd" description="Search the Search for product insta360 link 2 And Add to Cart Also Verify Price of both product and subtotal." finished-at="2025-03-03T03:10:21 IST" duration-ms="27134" status="PASS">
+        <test-method signature="searchProductAndAdd()[pri:1, instance:qa.tests.TestCase1@7f485fda]" started-at="2025-03-03T15:50:55 IST" name="searchProductAndAdd" description="Search  for product insta360 link 2 And Add to Cart Also Verify Price of both product and subtotal." finished-at="2025-03-03T15:51:24 IST" duration-ms="28279" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchProductAndAdd -->
-        <test-method is-config="true" signature="afterTestMethod(org.testng.ITestResult)[pri:0, instance:qa.tests.TestCase1@7f485fda]" started-at="2025-03-03T03:10:21 IST" name="afterTestMethod" finished-at="2025-03-03T03:10:23 IST" duration-ms="1154" status="PASS">
+        <test-method is-config="true" signature="afterTestMethod(org.testng.ITestResult)[pri:0, instance:qa.tests.TestCase1@7f485fda]" started-at="2025-03-03T15:51:24 IST" name="afterTestMethod" finished-at="2025-03-03T15:51:26 IST" duration-ms="2291" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -52,7 +52,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestMethod -->
-        <test-method is-config="true" signature="BeforeMethodMethod(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:qa.tests.TestCase1@7f485fda]" started-at="2025-03-03T03:10:23 IST" name="BeforeMethodMethod" finished-at="2025-03-03T03:10:27 IST" duration-ms="4431" status="PASS">
+        <test-method is-config="true" signature="BeforeMethodMethod(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:qa.tests.TestCase1@7f485fda]" started-at="2025-03-03T15:51:26 IST" name="BeforeMethodMethod" finished-at="2025-03-03T15:51:43 IST" duration-ms="17123" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -78,11 +78,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethodMethod -->
-        <test-method signature="validateNavigationBar()[pri:2, instance:qa.tests.TestCase1@7f485fda]" started-at="2025-03-03T03:10:27 IST" name="validateNavigationBar" description="Verify that the top navigation bar appears correctly without any rendering issue or missing elements " finished-at="2025-03-03T03:10:33 IST" duration-ms="6105" status="PASS">
+        <test-method signature="validateNavigationBar()[pri:2, instance:qa.tests.TestCase1@7f485fda]" started-at="2025-03-03T15:51:43 IST" name="validateNavigationBar" description="Verify that the top navigation bar appears correctly without any rendering issue or missing elements " finished-at="2025-03-03T15:51:49 IST" duration-ms="6099" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateNavigationBar -->
-        <test-method is-config="true" signature="afterTestMethod(org.testng.ITestResult)[pri:0, instance:qa.tests.TestCase1@7f485fda]" started-at="2025-03-03T03:10:33 IST" name="afterTestMethod" finished-at="2025-03-03T03:10:36 IST" duration-ms="2928" status="PASS">
+        <test-method is-config="true" signature="afterTestMethod(org.testng.ITestResult)[pri:0, instance:qa.tests.TestCase1@7f485fda]" started-at="2025-03-03T15:51:49 IST" name="afterTestMethod" finished-at="2025-03-03T15:51:50 IST" duration-ms="925" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -93,7 +93,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestMethod -->
-        <test-method is-config="true" signature="BeforeMethodMethod(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:qa.tests.TestCase1@7f485fda]" started-at="2025-03-03T03:10:36 IST" name="BeforeMethodMethod" finished-at="2025-03-03T03:10:41 IST" duration-ms="5354" status="PASS">
+        <test-method is-config="true" signature="BeforeMethodMethod(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:qa.tests.TestCase1@7f485fda]" started-at="2025-03-03T15:51:50 IST" name="BeforeMethodMethod" finished-at="2025-03-03T15:51:55 IST" duration-ms="4730" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -119,11 +119,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethodMethod -->
-        <test-method signature="verfyEnteringCredential()[pri:3, instance:qa.tests.TestCase1@7f485fda]" started-at="2025-03-03T03:10:41 IST" name="verfyEnteringCredential" description="Verify that the login page is loaded successfully And Login into Application." finished-at="2025-03-03T03:10:52 IST" duration-ms="10269" status="PASS">
+        <test-method signature="verfyEnteringCredential()[pri:3, instance:qa.tests.TestCase1@7f485fda]" started-at="2025-03-03T15:51:55 IST" name="verfyEnteringCredential" description="Verify that the login page is loaded successfully And Login into Application." finished-at="2025-03-03T15:52:07 IST" duration-ms="12011" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verfyEnteringCredential -->
-        <test-method is-config="true" signature="afterTestMethod(org.testng.ITestResult)[pri:0, instance:qa.tests.TestCase1@7f485fda]" started-at="2025-03-03T03:10:52 IST" name="afterTestMethod" finished-at="2025-03-03T03:10:53 IST" duration-ms="1046" status="PASS">
+        <test-method is-config="true" signature="afterTestMethod(org.testng.ITestResult)[pri:0, instance:qa.tests.TestCase1@7f485fda]" started-at="2025-03-03T15:52:07 IST" name="afterTestMethod" finished-at="2025-03-03T15:52:08 IST" duration-ms="1215" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -134,7 +134,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestMethod -->
-        <test-method is-config="true" signature="BeforeMethodMethod(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:qa.tests.TestCase1@7f485fda]" started-at="2025-03-03T03:10:53 IST" name="BeforeMethodMethod" finished-at="2025-03-03T03:10:57 IST" duration-ms="4541" status="PASS">
+        <test-method is-config="true" signature="BeforeMethodMethod(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:qa.tests.TestCase1@7f485fda]" started-at="2025-03-03T15:52:08 IST" name="BeforeMethodMethod" finished-at="2025-03-03T15:52:14 IST" duration-ms="5690" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -160,11 +160,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethodMethod -->
-        <test-method signature="EmptyCart()[pri:4, instance:qa.tests.TestCase1@7f485fda]" started-at="2025-03-03T03:10:57 IST" name="EmptyCart" description="Verify the Cart is empaty after Verification" finished-at="2025-03-03T03:11:14 IST" duration-ms="17089" status="PASS">
+        <test-method signature="EmptyCart()[pri:4, instance:qa.tests.TestCase1@7f485fda]" started-at="2025-03-03T15:52:14 IST" name="EmptyCart" description="Verify the Cart is empaty after Verification " finished-at="2025-03-03T15:52:36 IST" duration-ms="22129" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EmptyCart -->
-        <test-method is-config="true" signature="afterTestMethod(org.testng.ITestResult)[pri:0, instance:qa.tests.TestCase1@7f485fda]" started-at="2025-03-03T03:11:14 IST" name="afterTestMethod" finished-at="2025-03-03T03:11:15 IST" duration-ms="1010" status="PASS">
+        <test-method is-config="true" signature="afterTestMethod(org.testng.ITestResult)[pri:0, instance:qa.tests.TestCase1@7f485fda]" started-at="2025-03-03T15:52:36 IST" name="afterTestMethod" finished-at="2025-03-03T15:52:37 IST" duration-ms="1039" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -175,7 +175,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:qa.tests.TestCase1@7f485fda]" started-at="2025-03-03T03:11:15 IST" name="afterTest" finished-at="2025-03-03T03:11:16 IST" duration-ms="287" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:qa.tests.TestCase1@7f485fda]" started-at="2025-03-03T15:52:37 IST" name="afterTest" finished-at="2025-03-03T15:52:37 IST" duration-ms="287" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
