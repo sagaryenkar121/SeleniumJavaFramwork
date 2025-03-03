@@ -10,6 +10,7 @@ String searchBar="//input[@id='twotabsearchtextbox']";
 String returnOrder="//a[@id='nav-orders']";
 String cartIcon="//a[@id='nav-cart']";
 String NavBar="//div[@id='navbar']";
+String SignInButton="//span[normalize-space()='Account & Lists']";
 
 
 

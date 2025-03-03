@@ -24,6 +24,7 @@ public class LoginPageEvents {
 	public void enterCredentials() throws InterruptedException {
 
 		Thread.sleep(3000);
+		ele.getWebElement("XPATH", LoginPageElements.SignInButton).click();
 		ele.getWebElement("XPATH", LoginPageElements.mobileNumber).sendKeys("6352901777");
 		Thread.sleep(3000);
 		ele.getWebElement("XPATH", LoginPageElements.continueBtn).click();
