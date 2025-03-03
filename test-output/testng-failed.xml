@@ -14,7 +14,9 @@
           <include name="afterTest"/>
           <include name="beforeTestMethod"/>
           <include name="searchProductAndAdd"/>
+          <include name="EmptyCart"/>
           <include name="BeforeMethodMethod"/>
+          <include name="verfyEnteringCredential"/>
           <include name="afterTestMethod"/>
         </methods>
       </class> <!-- qa.tests.TestCase1 -->
