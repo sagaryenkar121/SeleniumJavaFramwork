@@ -9,7 +9,9 @@ import com.aventstack.extentreports.Status;
 import base.baseTest;
 import pageEvents.HomePageEvents;
 import pageEvents.LoginPageEvents;
+import pageEvents.OnlyLoginPageEvents;
 import pageEvents.SearchAndAddToCartEvents;
+import pageObject.OnlyLoginPageElements;
 import utils.ElementFetch;
 
 public class TestCase1 extends baseTest {
@@ -17,6 +19,7 @@ public class TestCase1 extends baseTest {
 	HomePageEvents homePage = new HomePageEvents();
 	LoginPageEvents loginPage = new LoginPageEvents();
 	SearchAndAddToCartEvents searchProductPage = new SearchAndAddToCartEvents();
+	OnlyLoginPageEvents onlyLogin = new OnlyLoginPageEvents();
 
 	@Test(priority = 3, description = "Verify that the login page is loaded successfully And Login into Application.")
 	public void verfyEnteringCredential() throws InterruptedException {
@@ -26,6 +29,8 @@ public class TestCase1 extends baseTest {
 		loginPage.enterCredentials();
 
 	}
+
+	
 
 	@Test(priority = 2, description = "Verify that the top navigation bar appears correctly without any rendering issue or missing elements ")
 	public void validateNavigationBar() throws InterruptedException {
@@ -38,7 +43,7 @@ public class TestCase1 extends baseTest {
 	public void searchProductAndAdd() throws InterruptedException {
 		logger.info("Verify the searched product, validate the product, add it to the cart, and also verify the subtotal.");
 		Thread.sleep(2000);
-		loginPage.enterCredentials();
+		onlyLogin.OnlyLogin();
 		searchProductPage.searchAndValidateProduct();
 		searchProductPage.verifySearchResult("insta360 link 2");
 		searchProductPage.addTocartAndCheckout();
@@ -49,7 +54,7 @@ public class TestCase1 extends baseTest {
 	public void EmptyCart() throws InterruptedException {
 		logger.info("Remove all added Product from cart make sure cart is empty ");
 		Thread.sleep(2000);
-		loginPage.enterCredentials();
+		onlyLogin.OnlyLogin();
 		searchProductPage.removeItemsFromCart();
 	}
 
