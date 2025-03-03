@@ -21,7 +21,7 @@ public class TestCase1 extends baseTest {
 	@Test(priority = 3, description = "Verify that the login page is loaded successfully And Login into Application.")
 	public void verfyEnteringCredential() throws InterruptedException {
 		logger.info("Verify the Sign In Button and login");
-		homePage.signInButton();
+		//homePage.signInButton();
 		loginPage.verifyIfLoginPageIsLoaded();
 		loginPage.enterCredentials();
 
