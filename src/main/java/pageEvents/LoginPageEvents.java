@@ -22,17 +22,16 @@ public class LoginPageEvents {
 	}
 
 	public void enterCredentials() throws InterruptedException {
-		
-		if(ele.getWebElement("XPATH", HomePageElements.amzonLogo).isDisplayed()) {
+
+		Thread.sleep(3000);
+		if(ele.getWebElement("XPATH", HomePageElements.AmzonLogoBeforeLogin).isDisplayed()) {
 			System.out.println("Amazon.sg logo is displayed correctly Before Login.");
 		}else {
 			 System.out.println("Amazon.sg logo is NOT displayed! BeforeLogin");
 			 
 		}
 		//Thread.sleep(5000);
-		Assert.assertTrue(ele.getWebElement("XPATH", HomePageElements.amzonLogo).isDisplayed(), "Amazon logo is NOT displayed! Before Login");
-
-		Thread.sleep(3000);
+		Assert.assertTrue(ele.getWebElement("XPATH", HomePageElements.AmzonLogoBeforeLogin).isDisplayed(), "Amazon logo is NOT displayed! Before Login");
 		
 		ele.getWebElement("XPATH", LoginPageElements.SignInButton).click();
 		ele.getWebElement("XPATH", LoginPageElements.mobileNumber).sendKeys("6352901777");
