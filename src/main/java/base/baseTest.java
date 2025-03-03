@@ -60,7 +60,7 @@ public class baseTest {
 	    driver.manage().window().setSize(new Dimension(1920, 1080));
 
 	    driver.get(Constants.url);
-	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	}
 
 	@AfterMethod
