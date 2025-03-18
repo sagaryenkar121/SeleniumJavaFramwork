@@ -17,16 +17,36 @@ import base.baseTest;
 
 public class SuiteListener implements ITestListener, IAnnotationTransformer{
 	
-	public void onTestFailure(ITestResult result) {
-		String filename= System.getProperty("user.dir")+File.separator+"screenshot"+File.separator+result.getMethod().getMethodName();
-		File f1= ((TakesScreenshot)baseTest.driver).getScreenshotAs(OutputType.FILE);
-		try {
-			FileUtils.copyFile(f1, new File(filename+ ".png"));
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
+	@Override
+    public void onTestFailure(ITestResult result) {
+        takeScreenshot(result, "failscreenshot");
+    }
+
+    @Override
+    public void onTestSuccess(ITestResult result) {
+        takeScreenshot(result, "passscreenshot");
+    }
+
+    private void takeScreenshot(ITestResult result, String folderName) {
+        String methodName = result.getMethod().getMethodName();
+        String timestamp = String.valueOf(System.currentTimeMillis());
+        String dirPath = System.getProperty("user.dir") + File.separator + folderName;
+        
+        // Create directory if it doesn't exist
+        File dir = new File(dirPath);
+        if (!dir.exists()) {
+            dir.mkdirs();
+        }
+
+        String filePath = dirPath + File.separator + methodName + "_" + timestamp + ".png";
+
+        File screenshot = ((TakesScreenshot) baseTest.driver).getScreenshotAs(OutputType.FILE);
+        try {
+            FileUtils.copyFile(screenshot, new File(filePath));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 	
 	/*
 	 * public void transform(ITestAnnotation annotation, Class testClass,
